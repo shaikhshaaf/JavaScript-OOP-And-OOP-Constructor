@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+<script type="text/javascript">
+	
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+   var myFather=new Person("John", "Doe", 50, "blue");
+   console.log(myFather.lastName);
+
+    ///or///
+
+   function person (first, last,age, eye) {
+   	this.firstName = first;
+   	this.lastName = last;
+   	this.age    =  age;
+   	this.eyeColor = eye;
+   }
+ 
+    var myFather = new person ("aaaa", "shaikh", "62", "black");
+    var myMother = new person ("bbbb", "shaikh", "56", "black");
+    myFather.nationality = "English";
+    console.log(myFather.firstName + " " + myMother.firstName);
+    console.log(myFather.nationality);
+
+
+
+
+
+</script>
+</body>
+</html>
